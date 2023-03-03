@@ -1,1 +1,13 @@
 # assignment-7
+
+## Package Title
+The package title is vcfR
+## Location
+This package is located on Github at https://github.com/knausb/vcfR as well as CRAN
+## Vignette(s)
+This package has not one but four formal vignettes. These include a vignette on what a VCF (Variant Call Format) file is, one on a general intro to vcfR, one on the workflow for vcfR, and one for converting objects in vcfR to other data or file formats.
+## Application(s)
+There are two thorough applications of this package that are both linked in the README. One is an entire website devoted to the package, covering everything from background information on R and file types used (they give a nice background as to what a VCF file is and how it’s structured) as well as many tutorials as to analyses vcfR can be used for. In addition, they link another website they’ve build all about population genetics and genomics in R, giving a really nice work through of how you can use R to perform all sorts of filtering, visualization, and analyses for population genetic/genomic studies. I was really impressed by all this documentation.
+## Review
+vcfR is described as a package to “help visualize, manipulate and quality filter VCF data”. Genetic/genomic data is often stored in VCF files and there exist many tools for filtering, manipulating, and analyzing these data. However, a disadvantage of many of these tools, such as VCFtools, is that they are run in Linux, making any sort of code documentation or data visualization difficult. This can make setting thresholds for filtering difficult as well. vcfR allows us to visualize this data though and keep records of code and previous filtering steps, allowing for better threshold determination and more consistent filtering across different datasets. An aspect I especially appreciate is how easy it is to output these data to other file formats that may be necessary for additional analyses. The authors of this package did a fantastic job providing all sorts of tutorials and documentation on the applications this package has, as well as how R can be utilized in population genetic/genomic studies in general. This makes learning how to use this package and its various utilities very easy to learn.
+The only aspect of this package I’m not a huge fan of is that the functions in vcfR are designed to only work on a single chromosome. When you have data from across the genome, it can be tedious to have to break data down chromosome by chromosome, especially in organisms like salmonids, which can have chromosome numbers in the high twenties. It would be nice if vcfR could be expanded to work with data across the genome simultaneously. Overall though I would recommend vcfR to anyone working with genetic/genomic data.
